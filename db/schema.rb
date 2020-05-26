@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_26_131103) do
+ActiveRecord::Schema.define(version: 2020_05_26_134714) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "student_residences", force: :cascade do |t|
     t.string "name", null: false
+    t.string "description"
     t.integer "property_type"
     t.integer "accomodation_type"
     t.boolean "pet_friendly"
@@ -29,6 +30,20 @@ ActiveRecord::Schema.define(version: 2020_05_26_131103) do
     t.integer "capacity", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "vacancies", force: :cascade do |t|
+    t.bigint "student_residence_id"
+    t.integer "gender"
+    t.string "description"
+    t.decimal "monthly_cost"
+    t.integer "availability"
+    t.string "availability_description"
+    t.integer "type"
+    t.decimal "square_meter"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["student_residence_id"], name: "index_vacancies_on_student_residence_id"
   end
 
 end

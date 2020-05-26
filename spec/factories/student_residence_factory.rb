@@ -2,6 +2,8 @@
 
 FactoryBot.define do
   factory :student_residence do
+    vacancies { [build(:vacancy)] }
+
     name { 'Rep Vegas' }
     description { 'Labore exercitation excepteur aliqua nulla eu eu id tempor nostrud. Est irure consequat cillum eiusmod irure ut laborum excepteur veniam. Aliquip reprehenderit labore mollit ea ea reprehenderit occaecat in. Occaecat reprehenderit qui ullamco magna magna labore magna reprehenderit reprehenderit voluptate elit ipsum.' }
     property_type { :house }

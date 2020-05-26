@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 class StudentResidence < ApplicationRecord
+  has_many :vacancies, dependent: :destroy, inverse_of: :student_residence
+
   enum property_type: {
     house: 0,
-    appartment: 1,
+    apartment: 1,
     kitnet: 2
   }
 

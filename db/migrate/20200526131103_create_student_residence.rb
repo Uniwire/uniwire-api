@@ -2,6 +2,7 @@ class CreateStudentResidence < ActiveRecord::Migration[6.0]
   def change
     create_table :student_residences do |t|
       t.string :name, null: false
+      t.string :description
       t.integer :property_type
       t.integer :accomodation_type
       t.boolean :pet_friendly

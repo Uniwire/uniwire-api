@@ -3,6 +3,8 @@
 class Vacancy < ApplicationRecord
   self.inheritance_column = nil
 
+  has_and_belongs_to_many :commodities, dependent: :destroy
+
   # TODO:
   #  * pictures table
   #  * characteristics table

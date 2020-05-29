@@ -10,10 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_26_134714) do
+ActiveRecord::Schema.define(version: 2020_05_29_130238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "commodities", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "commodities_vacancies", force: :cascade do |t|
+    t.bigint "vacancy_id", null: false
+    t.bigint "commodity_id", null: false
+    t.index ["commodity_id"], name: "index_commodities_vacancies_on_commodity_id"
+    t.index ["vacancy_id"], name: "index_commodities_vacancies_on_vacancy_id"
+  end
 
   create_table "student_residences", force: :cascade do |t|
     t.string "name", null: false
@@ -46,4 +59,6 @@ ActiveRecord::Schema.define(version: 2020_05_26_134714) do
     t.index ["student_residence_id"], name: "index_vacancies_on_student_residence_id"
   end
 
+  add_foreign_key "commodities_vacancies", "commodities"
+  add_foreign_key "commodities_vacancies", "vacancies"
 end

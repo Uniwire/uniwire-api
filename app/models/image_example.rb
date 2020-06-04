@@ -4,4 +4,5 @@
 # it exists only to demonstrate how to use
 # cloudinary to upload images.
 class ImageExample < ApplicationRecord
+  mount_uploader :image, PictureUploader
 end

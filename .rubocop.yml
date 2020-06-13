@@ -6,6 +6,7 @@ AllCops:
     - 'db/**/*'
     - 'config/**/*'
     - 'script/**/*'
+    - 'node_modules/**/*'
 
 Rails:
   Enabled: true

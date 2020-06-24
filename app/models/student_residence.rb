@@ -2,6 +2,7 @@
 
 class StudentResidence < ApplicationRecord
   has_many :vacancies, dependent: :destroy, inverse_of: :student_residence
+  has_many :pictures
 
   enum property_type: {
     house: 0,
@@ -27,5 +28,3 @@ class StudentResidence < ApplicationRecord
     incomplete: 2
   }
 end
-
-

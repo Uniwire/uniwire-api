@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_130238) do
+ActiveRecord::Schema.define(version: 2020_06_23_133839) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "characteristics", force: :cascade do |t|
+    t.bigint "vancancy_id"
+    t.boolean "air_conditioning"
+    t.boolean "exclusive_bathroom"
+    t.integer "parking_spot"
+    t.boolean "water_bill"
+    t.boolean "electricity_bill"
+    t.boolean "gas_bill"
+    t.integer "furnished"
+    t.string "furnished_description"
+    t.boolean "include_cleaner"
+    t.string "include_cleaner_description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["vancancy_id"], name: "index_characteristics_on_vancancy_id"
+  end
 
   create_table "commodities", force: :cascade do |t|
     t.string "name", null: false
@@ -26,6 +43,20 @@ ActiveRecord::Schema.define(version: 2020_05_29_130238) do
     t.bigint "commodity_id", null: false
     t.index ["commodity_id"], name: "index_commodities_vacancies_on_commodity_id"
     t.index ["vacancy_id"], name: "index_commodities_vacancies_on_vacancy_id"
+  end
+
+  create_table "image_examples", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pictures", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "student_residences", force: :cascade do |t|

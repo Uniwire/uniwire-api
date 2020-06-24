@@ -3,11 +3,9 @@
 class Vacancy < ApplicationRecord
   self.inheritance_column = nil
 
+  has_one :characteristic
+  has_many :pictures
   has_and_belongs_to_many :commodities, dependent: :destroy
-
-  # TODO:
-  #  * pictures table
-  #  * characteristics table
 
   belongs_to :student_residence, inverse_of: :vacancies
 

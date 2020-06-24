@@ -1,15 +1,7 @@
 # frozen_string_literal: true
 
-# This concern is responsable to collect the most possible context data about the Application enviroment data
+# This concern is responsible for collecting the as much context data about the application environment as possible
 # when an error happens.
-
-# Example
-#  class MyController
-#    include ApplicationContextCollector
-#
-#    before_action :collect_application_context
-#
-#  end
 
 module ApplicationContextCollector
   extend ActiveSupport::Concern

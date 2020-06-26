@@ -9,6 +9,8 @@ class Vacancy < ApplicationRecord
 
   belongs_to :student_residence, inverse_of: :vacancies
 
+  mount_uploader :image, PictureUploader
+
   enum gender: {
     both: 0,
     female: 1,

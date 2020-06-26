@@ -7,7 +7,7 @@ class PictureUploader < CarrierWave::Uploader::Base
     process resize_to_fill: [100, 150, :north]
   end
 
-  def public_id
-    return "image-#{Rails.env}/#{model.name}"
-  end
+  # def public_id
+  #   return "image-#{Rails.env}/#{model.id}"
+  # end
 end

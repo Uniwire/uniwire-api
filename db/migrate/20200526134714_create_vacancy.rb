@@ -9,6 +9,7 @@ class CreateVacancy < ActiveRecord::Migration[6.0]
       t.string :availability_description
       t.integer :type, default: 0
       t.decimal :square_meter, default: 0
+      t.string :image
 
       t.timestamps
     end

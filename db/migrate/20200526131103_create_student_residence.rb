@@ -13,6 +13,7 @@ class CreateStudentResidence < ActiveRecord::Migration[6.0]
       t.integer :internet, default: 0
       t.integer :furniture, default: 0
       t.integer :capacity, null: false
+      t.string :image
 
       t.timestamps
     end

@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_06_23_133839) do
     t.integer "furnished", default: 0
     t.string "furnished_description"
     t.boolean "include_cleaner", default: false
-    t.string "include_cleaner_description", null: false
+    t.string "include_cleaner_description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["vacancy_id"], name: "index_characteristics_on_vacancy_id"

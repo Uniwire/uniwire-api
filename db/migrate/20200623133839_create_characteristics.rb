@@ -13,7 +13,7 @@ class CreateCharacteristics < ActiveRecord::Migration[6.0]
       t.integer :furnished, default: 0
       t.string :furnished_description
       t.boolean :include_cleaner, default: false
-      t.string :include_cleaner_description, null: false
+      t.string :include_cleaner_description
 
       t.timestamps
     end

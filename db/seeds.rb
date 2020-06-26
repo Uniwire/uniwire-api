@@ -1,5 +1,7 @@
 Commodity.destroy_all
 StudentResidence.destroy_all
+Characteristic.destroy_all
+Vacancy.destroy_all
 
 def image_file(file_name)
   File.open(File.join(Rails.root, 'db', 'seed_images', file_name))
@@ -8,6 +10,7 @@ end
 require_relative 'seed/student_residences_seed'
 require_relative 'seed/commodities_seed'
 require_relative 'seed/vacancies_seed'
+require_relative 'seed/characteristics_seed'
 require_relative 'seed/pictures'
 
 # This file should contain all the record creation needed to seed the database with its default values.

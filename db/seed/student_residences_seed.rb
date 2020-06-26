@@ -31,4 +31,3 @@ StudentResidence.create!(
   furniture: :complete,
   capacity: 5
 )
-

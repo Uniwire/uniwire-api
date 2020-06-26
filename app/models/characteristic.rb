@@ -1,5 +1,5 @@
 class Characteristic < ApplicationRecord
-  belongs_to :vancancy
+  belongs_to :vacancy
 
   enum furniture: {
     no_furniture: 0,

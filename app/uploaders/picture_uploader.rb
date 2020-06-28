@@ -8,6 +8,6 @@ class PictureUploader < CarrierWave::Uploader::Base
   end
 
   def public_id
-    return "image-#{Rails.env}/#{model.class.name}/#{model.try(:name) || Time.now.strftime('%Y-%m-%d_%H-%M-%S')}"
+    "image-#{Rails.env}/#{model.class.name}/#{model.try(:name) || Time.now.strftime('%Y-%m-%d_%H-%M-%S')}"
   end
 end

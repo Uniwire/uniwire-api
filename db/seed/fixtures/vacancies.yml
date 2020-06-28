@@ -1,0 +1,89 @@
+:vacancy_1:
+  :gender: :both
+  :description: Melhor descrição para vaga 1.
+  :monthly_cost: 400.00
+  :availability: :soon
+  :availability_description: Livre à partir de setembro.
+  :type: :single_room
+  :square_meter: 25.2
+
+:vacancy_2:
+  :gender: :female
+  :description: Melhor descrição para vaga 2.
+  :monthly_cost: 500.00
+  :availability: :immediate
+  :availability_description: Preferencia pela melhor oferta.
+  :type: :entire_residence
+  :square_meter: 23.0
+
+:vacancy_3:
+  :gender: :male
+  :description: Melhor descrição para vaga 3.
+  :monthly_cost: 550.00
+  :availability: :immediate
+  :availability_description: Data de entrada negociável.
+  :type: :shared_room
+  :square_meter: 20.0
+
+:vacancy_4:
+  :gender: :female
+  :description: Melhor descrição para vaga 4.
+  :monthly_cost: 400.00
+  :availability: :immediate
+  :availability_description: Preferência por ordem de oferta.
+  :type: :single_room
+  :square_meter: 18.0
+
+:vacancy_5:
+  :gender: :both
+  :description: Melhor descrição para vaga 5.
+  :monthly_cost: 547.00
+  :availability: :soon
+  :availability_description: Livre à partir de agosto.
+  :type: :single_room
+  :square_meter: 19.00
+
+:vacancy_6:
+  :gender: :both
+  :description: Melhor descrição para vaga 6.
+  :monthly_cost: 600.00
+  :availability: :soon
+  :availability_description: Livre à partir de dezembro.
+  :type: :shared_room
+  :square_meter: 23.00
+
+:vacancy_7:
+  :gender: :female
+  :description: Melhor descrição para vaga 7.
+  :monthly_cost: 700.00
+  :availability: :unavailable
+  :availability_description: Vaga ocupada.
+  :type: :single_room
+  :square_meter: 40.0
+
+:vacancy_8:
+  :gender: :male
+  :description: Melhor descrição para vaga 8.
+  :monthly_cost: 580.00
+  :availability: :soon
+  :availability_description: Livre à partir de maio.
+  :type: :entire_residence
+  :square_meter: 35.00
+
+:vacancy_9:
+  :gender: :both
+  :description: Melhor descrição para vaga 9.
+  :monthly_cost: 600.00
+  :availability: :unavailable
+  :availability_description: Vaga ocupada.
+  :type: :entire_residence
+  :square_meter: 33.00
+
+:vacancy_10:
+  :gender: :both
+  :description: Melhor descrição para vaga 10.
+  :monthly_cost: 700.00
+  :availability: :immediate
+  :availability_description: Entrada urgente.
+  :type: :shared_room
+  :square_meter: 24.00

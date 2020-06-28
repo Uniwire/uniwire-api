@@ -1,0 +1,131 @@
+:characteristic_1:
+  :air_conditioning: false
+  :exclusive_bathroom: true
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: true
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_2:
+  :air_conditioning: true
+  :exclusive_bathroom: true
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: false
+  :furnished: :complete
+  :furnished_description: Have necessary
+  :include_cleaner: true
+  :include_cleaner_description: monthly
+
+:characteristic_3:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: true
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_4:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: false
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: monthly
+
+:characteristic_5:
+  :air_conditioning: true
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: false
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_1:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: true
+  :furnished: :complete
+  :furnished_description: Have necessary more other items
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_6:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: true
+  :furnished: :incomplete
+  :furnished_description: just have a bed
+  :include_cleaner: false
+  :include_cleaner_description: Responsibility of each resident
+
+:characteristic_7:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: false
+  :electricity_bill: false
+  :gas_bill: true
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_8:
+  :air_conditioning: false
+  :exclusive_bathroom: true
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: false
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly
+
+:characteristic_9:
+  :air_conditioning: false
+  :exclusive_bathroom: false
+  :parking_spot: 0
+  :water_bill: true
+  :electricity_bill: true
+  :gas_bill: true
+  :furnished: :incomplete
+  :furnished_description: Just have a bed
+  :include_cleaner: false
+  :include_cleaner_description: Responsibility of each resident
+
+:characteristic_10:
+  :air_conditioning: true
+  :exclusive_bathroom: true
+  :parking_spot: 0
+  :water_bill: false
+  :electricity_bill: false
+  :gas_bill: true
+  :furnished: :no_furniture
+  :furnished_description: Dont have nothing
+  :include_cleaner: true
+  :include_cleaner_description: weekly

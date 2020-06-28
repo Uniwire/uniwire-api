@@ -37,13 +37,15 @@ register_vacancies = [
   }
 ]
 
+image = image_file('treehouse.jpg')
+
 register_vacancies.each do |register|
   student_residence = StudentResidence.find_by(name: register[:student_residence_name])
 
   register[:vacancies].each do |number_vacancy|
     begin
       vacancy_params = all_vacancies["vacancy_#{number_vacancy}".to_sym]
-      vacancy_params[:image] = image_file('treehouse.jpg')
+      vacancy_params[:image] = image
       student_residence.vacancies.create!(vacancy_params)
 
       green "Vacancy: #{number_vacancy} for #{student_residence.name} -> Created with success."

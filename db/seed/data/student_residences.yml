@@ -1,0 +1,139 @@
+:student_residence_1:
+  :name: Rep Vegas
+  :description: Quis voluptate aliqua incididunt ex velit commodo. Excepteur Lorem elit eiusmod ut velit sint cillum laboris pariatur. Adipisicing aute consectetur incididunt laborum exercitation ullamco sint occaecat amet sunt quis consectetur et. Veniam consequat exercitation exercitation reprehenderit amet veniam. Cupidatat occaecat esse aliquip id ex Lorem culpa cillum aliqua consectetur aliqua nulla in eiusmod.
+  :property_type: :house
+  :accomodation_type: :fraternity
+  :pet_friendly: false
+  :lgbt_friendly: true
+  :accept_smoker: false
+  :accept_alcoohol: true
+  :residents_gender: :both
+  :internet: false
+  :furniture: :no_furniture
+  :capacity: 2
+
+:student_residence_2:
+  :name: Jurupinga
+  :description: Integer sit amet malesuada dolor. Vivamus tempor sem nisi, non accumsan eros rhoncus vel. Ut dui turpis, ultrices eu magna vitae, ornare consequat sapien. Quisque.
+  :property_type: :apartment
+  :accomodation_type: :other
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: true
+  :accept_alcoohol: true
+  :residents_gender: :female
+  :internet: false
+  :furniture: :complete
+  :capacity: 5
+
+:student_residence_3:
+  :name: Separados do A.g.a.c.a.i.u
+  :description: Praesent non tortor et tortor tempor sodales finibus ut quam. Quisque sodales fringilla mauris, egestas aliquet urna laoreet nec. Duis suscipit eu lorem at ornare. In in lectus velit. Maecenas in mattis.
+  :property_type: :kitnet
+  :accomodation_type: :pension
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: false
+  :accept_alcoohol: true
+  :residents_gender: :male
+  :internet: true
+  :furniture: :incomplete
+  :capacity: 3
+
+:student_residence_4:
+  :name: Unidos do A.g.a.c.a.i.u
+  :description: Praesent ac est sit amet turpis dictum vehicula ut non tellus. Nunc consequat lorem mattis lectus interdum, non ultrices enim tristique. Curabitur in dolor condimentum, consequat eros sit amet, sollicitudin turpis. Aenean convallis rhoncus velit laoreet.
+  :property_type: :apartment
+  :accomodation_type: :fraternity
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: true
+  :accept_alcoohol: true
+  :residents_gender: :both
+  :internet: false
+  :furniture: :incomplete
+  :capacity: 4
+
+:student_residence_5:
+  :name: Marla Pensionato
+  :description: Aenean ac tempor magna. Vestibulum fringilla tortor ut ipsum efficitur commodo. Suspendisse eleifend ornare arcu, sed efficitur ante porttitor quis. Praesent condimentum pulvinar tincidunt. Vivamus augue leo, fringilla sed viverra non, interdum quis dolor. Sed massa orci, fermentum ornare ornare.
+  :property_type: :house
+  :accomodation_type: :pension
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: true
+  :accept_alcoohol: false
+  :residents_gender: :both
+  :internet: true
+  :furniture: :complete
+  :capacity: 5
+
+:student_residence_6:
+  :name: Moradia da ROCKET
+  :description: Praesent vitae velit arcu. Nullam congue, ipsum vel hendrerit vestibulum, nibh orci aliquam sem, sed cursus nisi nisl vitae purus. Proin id orci pretium, tempus lacus vitae, commodo elit. Vivamus imperdiet augue vestibulum, porttitor justo ut, consectetur mi. Nullam non odio id velit.
+  :property_type: :house
+  :accomodation_type: :fraternity
+  :pet_friendly: false
+  :lgbt_friendly: true
+  :accept_smoker: false
+  :accept_alcoohol: false
+  :residents_gender: :female
+  :internet: true
+  :furniture: :complete
+  :capacity: 5
+
+:student_residence_7:
+  :name: moradia do BAJA
+  :description: Quisque at lobortis velit. Vestibulum eu nunc ipsum. Fusce sagittis iaculis eros vitae pellentesque. Suspendisse id metus sit amet nunc tincidunt venenatis eget finibus diam. Duis euismod ornare semper. Maecenas massa diam, sagittis eu elit eu, scelerisque feugiat sapien. Duis sagittis faucibus.
+  :property_type: :apartment
+  :accomodation_type: :fraternity
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: false
+  :accept_alcoohol: true
+  :residents_gender: :female
+  :internet: true
+  :furniture: :incomplete
+  :capacity: 4
+
+:student_residence_8:
+  :name: Unidos da HARPIA
+  :description: Velit incididunt commodo exercitation et qui irure voluptate dolor occaecat. Pariatur excepteur fugiat enim pariatur eu voluptate laborum amet commodo labore magna occaecat commodo pariatur. Excepteur id labore laboris elit nisi. Exercitation aliqua amet cillum in cillum deserunt excepteur et laborum aliqua laborum excepteur. Sunt enim dolore labore officia tempor proident enim mollit non.
+  :property_type: :kitnet
+  :accomodation_type: :other
+  :pet_friendly: false
+  :lgbt_friendly: false
+  :accept_smoker: false
+  :accept_alcoohol: true
+  :residents_gender: :female
+  :internet: true
+  :furniture: :complete
+  :capacity: 3
+
+:student_residence_9:
+  :name: Bonde do CR alto
+  :description: Praesent mollis leo tortor, vitae vehicula elit bibendum at. Maecenas pulvinar enim eu dolor mattis dignissim. Quisque consequat accumsan lacus, eget pharetra justo condimentum vitae. Quisque convallis quam eu justo varius lobortis. Cras fermentum iaculis varius. Curabitur dignissim ante metus, in fringilla elit porta quis.
+  :property_type: :apartment
+  :accomodation_type: :pension
+  :pet_friendly: true
+  :lgbt_friendly: true
+  :accept_smoker: false
+  :accept_alcoohol: true
+  :residents_gender: :male
+  :internet: true
+  :furniture: :no_furniture
+  :capacity: 3
+
+:student_residence_10:
+  :name: Bonde do CR baixo
+  :description: Mauris posuere fermentum pretium. Ut laoreet nulla quis sem fermentum tincidunt. Praesent vel nisi orci. Cras malesuada vestibulum augue eu maximus. Mauris imperdiet pretium porta. Sed facilisis nulla quis augue maximus tincidunt. Maecenas at nisl eu erat laoreet tincidunt sit amet sit amet leo. Sed non pretium tortor. Nullam luctus leo eu.
+  :property_type: :kitnet
+  :accomodation_type: :fraternity
+  :pet_friendly: true
+  :lgbt_friendly: false
+  :accept_smoker: true
+  :accept_alcoohol: false
+  :residents_gender: :both
+  :internet: false
+  :furniture: :no_furniture
+  :capacity: 2

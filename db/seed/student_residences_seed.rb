@@ -13,9 +13,9 @@ yellow "\nCreating ...\n"
 all_student_republics.each_value do |student_residence|
   begin
     StudentResidence.create!(student_residence)
-    green "Student Residance: #{student_residence[:name]} -> Created with success."
+    green "Student Residence: #{student_residence[:name]} -> Created with success."
   rescue
-    red "Student Residance: #{student_residence[:name]} -> Error."
+    red "Student Residence: #{student_residence[:name]} -> Error."
   end
 end
 
@@ -25,7 +25,7 @@ pink "\nNumber of student residences after the seed #{number_of_sr_after}.\n"
 sucess_sr = number_of_sr_after - number_of_sr_before == number_sr_seed
 
 if sucess_sr
-  green " ✔ All student residances created"
+  green " ✔ All student residences created"
 else
   red " ✖ There was a problem creating some student residence."
 end

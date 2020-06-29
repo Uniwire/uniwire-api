@@ -9,7 +9,7 @@ def image_file(file_name)
 end
 
 def pick_element(file_name)
-  path = Rails.root.join('db', 'seed', 'fixtures', file_name + '.yml')
+  path = Rails.root.join('db', 'seed', 'data', file_name + '.yml')
   YAML.load(File.read(path))
 end
 

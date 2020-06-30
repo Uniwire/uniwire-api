@@ -2,7 +2,7 @@
   :gender: :both
   :description: Melhor descrição para vaga 1.
   :monthly_cost: 400.00
-  :availability: :soon
+  :availability: :available_soon
   :availability_description: Livre à partir de setembro.
   :type: :single_room
   :square_meter: 25.2
@@ -11,7 +11,7 @@
   :gender: :female
   :description: Melhor descrição para vaga 2.
   :monthly_cost: 500.00
-  :availability: :immediate
+  :availability: :available
   :availability_description: Preferencia pela melhor oferta.
   :type: :entire_residence
   :square_meter: 23.0
@@ -20,7 +20,7 @@
   :gender: :male
   :description: Melhor descrição para vaga 3.
   :monthly_cost: 550.00
-  :availability: :immediate
+  :availability: :available
   :availability_description: Data de entrada negociável.
   :type: :shared_room
   :square_meter: 20.0
@@ -29,7 +29,7 @@
   :gender: :female
   :description: Melhor descrição para vaga 4.
   :monthly_cost: 400.00
-  :availability: :immediate
+  :availability: :available
   :availability_description: Preferência por ordem de oferta.
   :type: :single_room
   :square_meter: 18.0
@@ -38,7 +38,7 @@
   :gender: :both
   :description: Melhor descrição para vaga 5.
   :monthly_cost: 547.00
-  :availability: :soon
+  :availability: :available_soon
   :availability_description: Livre à partir de agosto.
   :type: :single_room
   :square_meter: 19.00
@@ -47,7 +47,7 @@
   :gender: :both
   :description: Melhor descrição para vaga 6.
   :monthly_cost: 600.00
-  :availability: :soon
+  :availability: :available_soon
   :availability_description: Livre à partir de dezembro.
   :type: :shared_room
   :square_meter: 23.00
@@ -65,7 +65,7 @@
   :gender: :male
   :description: Melhor descrição para vaga 8.
   :monthly_cost: 580.00
-  :availability: :soon
+  :availability: :available_soon
   :availability_description: Livre à partir de maio.
   :type: :entire_residence
   :square_meter: 35.00
@@ -83,7 +83,7 @@
   :gender: :both
   :description: Melhor descrição para vaga 10.
   :monthly_cost: 700.00
-  :availability: :immediate
+  :availability: :available
   :availability_description: Entrada urgente.
   :type: :shared_room
   :square_meter: 24.00

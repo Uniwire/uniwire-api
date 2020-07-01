@@ -37,7 +37,7 @@ class Vacancy < ApplicationRecord
     state :unavailable
 
     event :vacate_soon do
-      transitions from: %i[unavailable, available], to: :available_soon
+      transitions from: %i[unavailable available], to: :available_soon
     end
 
     event :vacate_now do

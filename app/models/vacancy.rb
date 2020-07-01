@@ -3,11 +3,14 @@
 class Vacancy < ApplicationRecord
   self.inheritance_column = nil
 
-  has_one :characteristic, dependent: :destroy
+  has_one :characteristic, dependent: :destroy, validate: true
   has_many :pictures
   has_and_belongs_to_many :commodities, dependent: :delete_all
 
   belongs_to :student_residence, inverse_of: :vacancies
+
+  validates :monthly_cost, :numericality => { :greater_than => 0 }
+  validates :availability, :gender, :type, presence: true
 
   mount_uploader :image, UploaderFactory.uploader
 

@@ -37,7 +37,8 @@ MODELS = [
   Vacancy,
   Commodity,
   StudentResidence,
-  Characteristic
+  Characteristic,
+  RiskArea
 ].freeze
 
 MODELS.each do |model|
@@ -56,3 +57,4 @@ require_relative 'seed/student_residences_seed'
 require_relative 'seed/vacancies_seed'
 require_relative 'seed/commodities_seed'
 require_relative 'seed/characteristics_seed'
+require_relative 'seed/risk_areas_seed'

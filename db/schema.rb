@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2020_07_10_174831) do
   end
 
   create_table "risk_areas", force: :cascade do |t|
-    t.integer "type"
+    t.integer "type", null: false
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

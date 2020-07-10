@@ -6,6 +6,7 @@ class RiskArea < ApplicationRecord
   enum type: {
     flooding: 0,
     theft: 1,
-    harassment: 2
+    harassment: 2,
+    other: 3
   }
 end

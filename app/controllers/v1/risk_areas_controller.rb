@@ -14,7 +14,7 @@ module V1
       @risk_area = RiskArea.find(params[:id])
 
       render json: {
-        residence: @risk_area
+        risk_area: @risk_area
       }
     end
 

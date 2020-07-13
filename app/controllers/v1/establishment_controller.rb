@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 module V1
-  class EstablishmentController < ApplicationController
+  class EstablishmentsController < ApplicationController
     def index
-      @establishment = Establishment.all
+      @establishments = Establishment.all
 
-      if Establishment.nil?
+      if @establishments.nil?
         render :unprocessable_entity
       else
         render json: {
-          establishment = @establishment
+          establishments = @establishments
         }
       end
     end
@@ -17,7 +17,7 @@ module V1
     def show
       @establishment = Establishment.find(params[:id])
 
-      if Establishment.blank?
+      if @establishment.blank?
         head :not_found
       else
         render json: {

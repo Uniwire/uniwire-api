@@ -1,0 +1,27 @@
+:establishment_1:
+  :name: Charlie Burger
+  :description: Phasellus eu odio finibus, ullamcorper lectus vel, luctus tellus.
+  :establishment_type: :food
+  :delivery_availability: :true
+  :price: 30.0
+
+:establishment_2:
+  :name: :Lojas Dez
+  :description: Sed ultricies, nisl in lobortis vehicula, nunc lacus posuere lorem, id aliquet turpis erat a ante.
+  :establishment_type: :home_appliances
+  :delivery_availability: :false
+  :price: 100.0
+
+:establishment_3:
+  :name: :Roupas e Moda
+  :description: Morbi at nibh et dui faucibus congue. Pellentesque sed magna laoreet, facilisis libero nec, varius neque.
+  :establishment_type: :weaving
+  :delivery_availability: true
+  :price: 150.0
+
+:establishment_4:
+  :name: :Construções e Lazer
+  :description: Maecenas scelerisque sem ut luctus efficitur.
+  :establishment_type: :building_supplies
+  :delivery_availability: true
+  :price: 80.0

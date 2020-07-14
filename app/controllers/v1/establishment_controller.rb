@@ -2,21 +2,17 @@
 
 module V1
   class EstablishmentsController < ApplicationController
+    before_action :load_establishment, only: [:show, :update, :destroy]
+
     def index
       @establishments = Establishment.all
 
-      if @establishments.nil?
-        render :unprocessable_entity
-      else
-        render json: {
-          establishments = @establishments
-        }
-      end
+      render json: {
+        establishments = @establishments
+      }
     end
 
     def show
-      @establishment = Establishment.find(params[:id])
-
       if @establishment.blank?
         head :not_found
       else
@@ -37,8 +33,6 @@ module V1
     end
 
     def update
-      @establishment = Establishment.find(params[:id])
-
       if @establishment.update(establishment_params)
         render json: @establishment
       else
@@ -46,11 +40,13 @@ module V1
       end
     end
 
-    def destroy
-      @establishment = Establishment.find(params[:id]).destroy
-    end
+    def destroy; end
 
     private
+
+    def load_establishment
+      @establishment ||= Establishment.find(params[:id])
+    end
 
     def establishment_params
       params.require(:establishment).permit(

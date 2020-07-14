@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :risk_area do
     type { :flooding }
-    description { "Inundou" }
+    description { 'Inundou' }
   end
 end

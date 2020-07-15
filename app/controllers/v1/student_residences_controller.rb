@@ -5,17 +5,13 @@ module V1
     def index
       @student_residences = StudentResidence.all
 
-      render json: {
-        residences: @student_residences
-      }
+      render json: @student_residences
     end
 
     def show
       @student_residence = StudentResidence.find(params[:id])
 
-      render json: {
-        residence: @student_residence
-      }
+      render json: @student_residence
     end
 
     def create

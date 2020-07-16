@@ -1,5 +1,7 @@
 module V1
   class EventsController < ApplicationController
+    before_action :load_event
+
     def index
       @events = Event.all
 
@@ -9,8 +11,6 @@ module V1
     end
 
     def show
-      @event = Event.find(params[:id])
-
       render json: {
         event: @event
       }
@@ -27,8 +27,6 @@ module V1
     end
 
     def update
-      @event = Event.find(params[:id])
-
       if @event.update(event_params)
         render json: @event
       else
@@ -37,7 +35,6 @@ module V1
     end
 
     def destroy
-      Event.find(params[:id]).destroy
     end
 
     private
@@ -51,6 +48,10 @@ module V1
         :start_time,
         :end_time
       )
+    end
+
+    def load_event
+      @event ||= Event.find(params[:id])
     end
   end
 end

@@ -1,4 +1,4 @@
-:event_1:
+event_1:
   :type: "Party"
   :title: "The Best Party"
   :description: "Let's party!!!"
@@ -7,7 +7,7 @@
   :start_time: "6pm"
   :end_time: "11pm"
 
-:event_2:
+event_2:
   :type: "Donation"
   :title: "Books Donatation"
   :description: "Come to donate the books you've already read, spread knowledge..."
@@ -16,7 +16,7 @@
   :start_time: "8am"
   :end_time: "11am"
 
-:event_3:
+event_3:
   :type: "Music"
   :title: "College Rock Group Concert"
   :description: "The best college rock group came back for another concert!"

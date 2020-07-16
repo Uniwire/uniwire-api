@@ -5,7 +5,7 @@ class Vacancy < ApplicationRecord
 
   include AASM
 
-  has_one :characteristic, dependent: :destroy, validate: true
+  has_one :characteristic, dependent: :destroy
   has_many :pictures
   has_and_belongs_to_many :commodities, dependent: :delete_all
 

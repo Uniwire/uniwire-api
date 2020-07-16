@@ -45,6 +45,13 @@ ActiveRecord::Schema.define(version: 2020_07_12_193033) do
     t.index ["vacancy_id"], name: "index_commodities_vacancies_on_vacancy_id"
   end
 
+  create_table "risk_areas", force: :cascade do |t|
+    t.integer "type", null: false
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "establishments", force: :cascade do |t|
     t.string "name", null: false
     t.string "description"

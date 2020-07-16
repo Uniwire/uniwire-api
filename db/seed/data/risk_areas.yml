@@ -1,0 +1,11 @@
+:risk_area_1:
+  :type: 2
+  :description: "Vivamus tempor sem nisi, non accumsan eros rhoncus vel."
+
+:risk_area_2:
+  :type: 0
+  :description: "Praesent non tortor et tortor tempor sodales finibus ut quam."
+
+:risk_area_3:
+  :type: 1
+  :description: "Quisque consequat accumsan lacus, eget pharetra justo condimentum vitae."

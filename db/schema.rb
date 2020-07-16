@@ -11,7 +11,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 2020_07_16_150413) do
-
+  
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -53,6 +53,30 @@ ActiveRecord::Schema.define(version: 2020_07_16_150413) do
     t.string "date"
     t.string "start_time"
     t.string "end_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "risk_areas", force: :cascade do |t|
+    t.integer "type", null: false
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "establishments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "description"
+    t.integer "establishment_type", default: 0
+    t.boolean "delivery_availability", default: true
+    t.decimal "price", default: "0.0"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "image_examples", force: :cascade do |t|
+    t.string "name"
+    t.string "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,0 +1,26 @@
+:event_1:
+  :type: "Party"
+  :title: "The Best Party"
+  :description: "Let's party!!!"
+  :link: "www.thebestparty.com"
+  :date: "2020/12/12"
+  :start_time: "6pm"
+  :end_time: "11pm"
+
+:event_2:
+  :type: "Donation"
+  :title: "Books Donatation"
+  :description: "Come to donate the books you've already read, spread knowledge..."
+  :link: "www.booksdonation.com"
+  :date: "2020/07/11"
+  :start_time: "8am"
+  :end_time: "11am"
+
+:event_3:
+  :type: "Music"
+  :title: "College Rock Group Concert"
+  :description: "The best college rock group came back for another concert!"
+  :link: "www.collegerockgroup.com"
+  :date: "2020/08/10"
+  :start_time: "16pm"
+  :end_time: "18pm"

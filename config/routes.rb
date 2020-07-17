@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     resources :events
     resources :risk_areas
     resources :student_residences
-    resources :establishment
+    resources :establishments
   end
 end

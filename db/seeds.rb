@@ -38,6 +38,7 @@ MODELS = [
   Commodity,
   StudentResidence,
   Characteristic,
+  Event,
   RiskArea,
   Establishment
 ].freeze
@@ -58,5 +59,6 @@ require_relative 'seed/student_residences_seed'
 require_relative 'seed/vacancies_seed'
 require_relative 'seed/commodities_seed'
 require_relative 'seed/characteristics_seed'
+require_relative 'seed/events_seed'
 require_relative 'seed/risk_areas_seed'
 require_relative 'seed/establishments_seed'

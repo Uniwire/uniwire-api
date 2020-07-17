@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_12_193033) do
-
+ActiveRecord::Schema.define(version: 2020_07_16_150413) do
+  
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -43,6 +43,25 @@ ActiveRecord::Schema.define(version: 2020_07_12_193033) do
     t.bigint "commodity_id", null: false
     t.index ["commodity_id"], name: "index_commodities_vacancies_on_commodity_id"
     t.index ["vacancy_id"], name: "index_commodities_vacancies_on_vacancy_id"
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "type"
+    t.string "title"
+    t.string "description"
+    t.string "link"
+    t.string "date"
+    t.string "start_time"
+    t.string "end_time"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "risk_areas", force: :cascade do |t|
+    t.integer "type", null: false
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "establishments", force: :cascade do |t|

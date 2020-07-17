@@ -1,0 +1,57 @@
+module V1
+  class EventsController < ApplicationController
+    before_action :load_event
+
+    def index
+      @events = Event.all
+
+      render json: {
+        events: @events
+      }
+    end
+
+    def show
+      render json: {
+        event: @event
+      }
+    end
+
+    def create
+      @event = Event.new(event_params)
+
+      if @event.save
+        render json: @event, status: :created
+      else
+        render json: @event.errors, status: :unprocessable_entity
+      end
+    end
+
+    def update
+      if @event.update(event_params)
+        render json: @event
+      else
+        render json: @event.errors, status: :unprocessable_entity
+      end
+    end
+
+    def destroy
+    end
+
+    private
+
+    def event_params
+      params.require(:event).permit(
+        :type,
+        :description,
+        :link,
+        :date,
+        :start_time,
+        :end_time
+      )
+    end
+
+    def load_event
+      @event ||= Event.find(params[:id])
+    end
+  end
+end

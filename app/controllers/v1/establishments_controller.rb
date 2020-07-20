@@ -7,18 +7,14 @@ module V1
     def index
       @establishments = Establishment.all
 
-      render json: {
-        establishments = @establishments
-      }
+      render json: @establishments
     end
 
     def show
       if @establishment.blank?
         head :not_found
       else
-        render json: {
-          establishment = @establishment
-        }
+        render json: @establishment
       end
     end
 

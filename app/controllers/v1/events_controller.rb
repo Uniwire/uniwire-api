@@ -1,19 +1,15 @@
 module V1
   class EventsController < ApplicationController
-    before_action :load_event
+    before_action :load_event, only: [:show, :destroy, :update]
 
     def index
       @events = Event.all
 
-      render json: {
-        events: @events
-      }
+      render json: @events
     end
 
     def show
-      render json: {
-        event: @event
-      }
+      render json: @event
     end
 
     def create
@@ -35,6 +31,7 @@ module V1
     end
 
     def destroy
+      @event.destroy!
     end
 
     private

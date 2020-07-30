@@ -2,6 +2,8 @@
 
 module V1
   class StudentResidencesController < ApplicationController
+    before_action :load_student_residence, only: [:show, :destroy, :update]
+
     def index
       @student_residences = StudentResidence.all
 
@@ -9,8 +11,6 @@ module V1
     end
 
     def show
-      @student_residence = StudentResidence.find(params[:id])
-
       render json: @student_residence
     end
 
@@ -25,8 +25,6 @@ module V1
     end
 
     def update
-      @student_residence = StudentResidence.find(params[:id])
-
       if @student_residence.update(student_residence_params)
         render json: @student_residence
       else
@@ -35,7 +33,7 @@ module V1
     end
 
     def destroy
-      StudentResidence.find(params[:id]).destroy
+      @student_residence.destroy!
     end
 
     private
@@ -54,6 +52,10 @@ module V1
         :furniture,
         :capacity
       )
+    end
+
+    def load_student_residence
+      @student_residence ||= StudentResidence.find(params[:id])
     end
   end
 end

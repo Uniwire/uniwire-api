@@ -2,20 +2,16 @@
 
 module V1
   class RiskAreasController < ApplicationController
+    before_action :load_risk_area, only: [:show, :destroy, :update]
+
     def index
       @risk_areas = RiskArea.all
 
-      render json: {
-        risk_areas: @risk_areas
-      }
+      render json: @risk_areas
     end
 
     def show
-      @risk_area = RiskArea.find(params[:id])
-
-      render json: {
-        risk_area: @risk_area
-      }
+      render json: @risk_area
     end
 
     def create
@@ -29,8 +25,6 @@ module V1
     end
 
     def update
-      @risk_area = RiskArea.find(params[:id])
-
       if @risk_area.update(risk_area_params)
         render json: @risk_area
       else
@@ -39,13 +33,17 @@ module V1
     end
 
     def destroy
-      RiskArea.find(params[:id]).destroy
+      @risk_area.destroy!
     end
 
     private
 
     def risk_area_params
       params.require(:risk_area).permit(:type, :description)
+    end
+
+    def load_risk_area
+      @risk_area ||= RiskArea.find(params[:id])
     end
   end
 end

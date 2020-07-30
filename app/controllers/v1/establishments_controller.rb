@@ -36,7 +36,9 @@ module V1
       end
     end
 
-    def destroy; end
+    def destroy
+      @establishment.destroy!
+    end
 
     private
 

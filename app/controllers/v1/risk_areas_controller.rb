@@ -43,7 +43,11 @@ module V1
     end
 
     def load_risk_area
-      @risk_area ||= RiskArea.find(params[:id])
+      begin
+        @risk_area ||= RiskArea.find(params[:id])
+      rescue
+        head :not_found
+      end
     end
   end
 end

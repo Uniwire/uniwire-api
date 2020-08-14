@@ -33,7 +33,11 @@ module V1
     end
 
     def destroy
-      @risk_area.destroy!
+      if @risk_area.destroy!
+        head :no_content
+      else
+        head :unprocessable_entity
+      end
     end
 
     private
@@ -43,7 +47,11 @@ module V1
     end
 
     def load_risk_area
-      @risk_area ||= RiskArea.find(params[:id])
+      begin
+        @risk_area ||= RiskArea.find(params[:id])
+      rescue
+        head :not_found
+      end
     end
   end
 end

@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Create Risk Area', type: :request do
-  describe 'POST /risk_areas' do
+  describe 'POST /v1/risk_areas' do
     context 'when risk area is created' do
       it 'returns status 201 (:created)' do
         post '/v1/risk_areas', :params => { "risk_area": { "type": "flooding", "description": "Inundou" } }

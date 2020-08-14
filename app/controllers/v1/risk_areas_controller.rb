@@ -33,7 +33,11 @@ module V1
     end
 
     def destroy
-      @risk_area.destroy!
+      if @risk_area.destroy!
+        head :no_content
+      else
+        head :unprocessable_entity
+      end
     end
 
     private

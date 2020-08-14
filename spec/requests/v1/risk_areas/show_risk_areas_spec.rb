@@ -2,8 +2,8 @@
 
 require 'rails_helper'
 
-RSpec.describe 'List Risk Areas', type: :request do
-  describe 'GET /risk_areas' do
+RSpec.describe 'Show Risk Areas', type: :request do
+  describe 'GET /risk_areas/:id' do
     context 'when risk area is not found' do
       it 'returns status 404 (:not_found)' do
         get '/v1/risk_areas/x'

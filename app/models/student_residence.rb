@@ -4,6 +4,8 @@ class StudentResidence < ApplicationRecord
   has_many :vacancies, dependent: :destroy, inverse_of: :student_residence
   has_many :pictures
 
+  validates :name, presence: true
+
   enum property_type: {
     house: 0,
     apartment: 1,

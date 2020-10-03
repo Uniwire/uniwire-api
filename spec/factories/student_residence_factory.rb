@@ -13,7 +13,7 @@ FactoryBot.define do
     accept_smoker { false }
     accept_alcoohol { true }
     residents_gender { :both }
-    internet { false }
+    internet { 10 }
     furniture { :no_furniture }
     capacity { 2 }
   end

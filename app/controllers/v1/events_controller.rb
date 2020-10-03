@@ -36,6 +36,7 @@ module V1
 
     def event_params
       params.require(:event).permit(
+        :title,
         :type,
         :description,
         :link,

@@ -2,38 +2,36 @@
 
 module V1
   class StudentResidencesController < ApplicationController
-    before_action :load_student_residence, only: [:show, :destroy, :update]
-
     def index
-      @student_residences = StudentResidence.all
+      student_residences = StudentResidence.all
 
-      render json: @student_residences
+      render json: student_residences
     end
 
     def show
-      render json: @student_residence
+      render json: student_residence
     end
 
     def create
-      @student_residence = StudentResidence.new(student_residence_params)
+      student_residence = StudentResidence.new(student_residence_params)
 
-      if @student_residence.save
-        render json: @student_residence, status: :created
+      if student_residence.save
+        render json: student_residence, status: :created
       else
-        render json: @student_residence.errors, status: :unprocessable_entity
+        render json: student_residence.errors, status: :unprocessable_entity
       end
     end
 
     def update
-      if @student_residence.update(student_residence_params)
-        render json: @student_residence
+      if student_residence.update(student_residence_params)
+        render json: student_residence
       else
-        render json: @student_residence.errors, status: :unprocessable_entity
+        render json: student_residence.errors, status: :unprocessable_entity
       end
     end
 
     def destroy
-      @student_residence.destroy!
+      student_residence.destroy!
     end
 
     private
@@ -54,8 +52,8 @@ module V1
       )
     end
 
-    def load_student_residence
-      @student_residence ||= StudentResidence.find(params[:id])
+    def student_residence
+      student_residence ||= StudentResidence.find(params[:id])
     end
   end
 end

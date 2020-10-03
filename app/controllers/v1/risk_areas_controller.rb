@@ -2,38 +2,36 @@
 
 module V1
   class RiskAreasController < ApplicationController
-    before_action :load_risk_area, only: [:show, :destroy, :update]
-
     def index
-      @risk_areas = RiskArea.all
+      risk_areas = RiskArea.all
 
-      render json: @risk_areas
+      render json: risk_areas
     end
 
     def show
-      render json: @risk_area
+      render json: risk_area
     end
 
     def create
-      @risk_area = RiskArea.new(risk_area_params)
+      risk_area = RiskArea.new(risk_area_params)
 
-      if @risk_area.save
-        render json: @risk_area, status: :created
+      if risk_area.save
+        render json: risk_area, status: :created
       else
-        render json: @risk_area.errors, status: :unprocessable_entity
+        render json: risk_area.errors, status: :unprocessable_entity
       end
     end
 
     def update
-      if @risk_area.update(risk_area_params)
-        render json: @risk_area
+      if risk_area.update(risk_area_params)
+        render json: risk_area
       else
-        render json: @risk_area.errors, status: :unprocessable_entity
+        render json: risk_area.errors, status: :unprocessable_entity
       end
     end
 
     def destroy
-      @risk_area.destroy!
+      risk_area.destroy!
     end
 
     private
@@ -42,8 +40,8 @@ module V1
       params.require(:risk_area).permit(:type, :description)
     end
 
-    def load_risk_area
-      @risk_area ||= RiskArea.find(params[:id])
+    def risk_area
+      risk_area ||= RiskArea.find(params[:id])
     end
   end
 end

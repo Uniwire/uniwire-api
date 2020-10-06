@@ -19,10 +19,10 @@ RSpec.describe 'List Events', type: :request do
       expect(body.size).to eq(2)
 
       expect(body[0]['id']).to eq(first_event.id)
-      expect(body[0]['title']).to eq(first_event.title)
+      expect(body[0]['title']).to eq('First event')
 
       expect(body[1]['id']).to eq(second_event.id)
-      expect(body[1]['title']).to eq(second_event.title)
+      expect(body[1]['title']).to eq('Second event')
     end
   end
 end

@@ -39,6 +39,7 @@ module V1
     def student_residence_params
       params.require(:student_residence).permit(
         :name,
+        :description,
         :property_type,
         :accomodation_type,
         :pet_friendly,

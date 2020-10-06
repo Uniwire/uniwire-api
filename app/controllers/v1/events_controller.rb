@@ -1,37 +1,35 @@
 module V1
   class EventsController < ApplicationController
-    before_action :load_event, only: [:show, :destroy, :update]
-
     def index
-      @events = Event.all
+      events = Event.all
 
-      render json: @events
+      render json: events
     end
 
     def show
-      render json: @event
+      render json: event
     end
 
     def create
-      @event = Event.new(event_params)
+      event = Event.new(event_params)
 
-      if @event.save
-        render json: @event, status: :created
+      if event.save
+        render json: event, status: :created
       else
-        render json: @event.errors, status: :unprocessable_entity
+        render json: event.errors, status: :unprocessable_entity
       end
     end
 
     def update
-      if @event.update(event_params)
-        render json: @event
+      if event.update(event_params)
+        render json: event
       else
-        render json: @event.errors, status: :unprocessable_entity
+        render json: event.errors, status: :unprocessable_entity
       end
     end
 
     def destroy
-      @event.destroy!
+      event.destroy!
     end
 
     private
@@ -47,8 +45,8 @@ module V1
       )
     end
 
-    def load_event
-      @event ||= Event.find(params[:id])
+    def event
+      event ||= Event.find(params[:id])
     end
   end
 end

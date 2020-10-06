@@ -3,6 +3,8 @@
 class Establishment < ApplicationRecord
   self.inheritance_column = nil
 
+  validates :name, presence: true
+
   enum establishment_type: {
     food: 0,
     home_appliances: 1,

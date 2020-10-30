@@ -7,6 +7,9 @@ RSpec.describe "student_residences#create", type: :request do
 
   describe 'basic create' do
     let(:params) do
+      # Attributes_for uses data from FactoryBot
+      # and graphiti does not know what to do with the vacancies relationship.
+      # I am removing it from the attributes.
       attributes_for(:student_residence).except(:vacancies)
     end
 

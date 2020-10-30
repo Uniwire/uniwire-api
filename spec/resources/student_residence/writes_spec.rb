@@ -6,6 +6,9 @@ RSpec.describe StudentResidenceResource, type: :resource do
       {
         data: {
           type: 'student_residences',
+          # Attributes_for uses data from FactoryBot
+          # and graphiti does not know what to do with the vacancies relationship.
+          # I am removing it from the attributes.
           attributes: attributes_for(:student_residence).except(:vacancies)
         }
       }

@@ -7,8 +7,9 @@ RSpec.describe "student_residences#create", type: :request do
 
   describe 'basic create' do
     let(:params) do
-      attributes_for(:student_residence)
+      attributes_for(:student_residence).except(:vacancies)
     end
+
     let(:payload) do
       {
         data: {

@@ -14,14 +14,13 @@ RSpec.describe "student_residences#update", type: :request do
           id: student_residence.id.to_s,
           type: 'student_residences',
           attributes: {
-            # ... your attrs here
+            name: 'The best place for estudents'
           }
         }
       }
     end
 
-    # Replace 'xit' with 'it' after adding attributes
-    xit 'updates the resource' do
+    it 'updates the resource' do
       expect(StudentResidenceResource).to receive(:find).and_call_original
       expect {
         make_request

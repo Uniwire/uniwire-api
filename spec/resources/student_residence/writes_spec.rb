@@ -6,7 +6,7 @@ RSpec.describe StudentResidenceResource, type: :resource do
       {
         data: {
           type: 'student_residences',
-          attributes: attributes_for(:student_residence)
+          attributes: attributes_for(:student_residence).except(:vacancies)
         }
       }
     end
@@ -30,7 +30,9 @@ RSpec.describe StudentResidenceResource, type: :resource do
         data: {
           id: student_residence.id.to_s,
           type: 'student_residences',
-          attributes: { } # Todo!
+          attributes: {
+            name: 'Rep do ABC'
+          }
         }
       }
     end
@@ -39,11 +41,11 @@ RSpec.describe StudentResidenceResource, type: :resource do
       StudentResidenceResource.find(payload)
     end
 
-    xit 'works (add some attributes and enable this spec)' do
+    it 'works (add some attributes and enable this spec)' do
       expect {
         expect(instance.update_attributes).to eq(true)
       }.to change { student_residence.reload.updated_at }
-      # .and change { student_residence.foo }.to('bar') <- example
+       .and change { student_residence.name }.to('Rep do ABC')
     end
   end
 

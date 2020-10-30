@@ -15,4 +15,11 @@ class StudentResidenceResource < ApplicationResource
   attribute :capacity, :integer
   attribute :created_at, :datetime, writable: false
   attribute :updated_at, :datetime, writable: false
+
+
+  attribute :vacancies_count, :integer do
+    @object.vacancies.count
+  end
+
+  has_many :vacancies
 end

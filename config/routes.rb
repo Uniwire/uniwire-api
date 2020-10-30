@@ -9,4 +9,8 @@ Rails.application.routes.draw do
     resources :student_residences
     resources :establishments
   end
+
+  scope path: ApplicationResource.endpoint_namespace, module: 'v2', defaults: { format: :jsonapi } do
+    resources :student_residences
+  end
 end

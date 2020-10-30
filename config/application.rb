@@ -33,5 +33,9 @@ module UniwireApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    routes.default_url_options[:host] = ENV.fetch('HOST', 'http://localhost:3000')
+
+    config.debug_exception_response_format = :api
   end
 end

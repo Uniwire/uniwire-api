@@ -9,15 +9,25 @@ gem 'aasm'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'dotenv-rails'
+gem 'graphiti'
+gem 'graphiti-rails'
+gem 'kaminari'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 4.1'
 gem 'rack-cors'
+gem 'responders'
 gem 'sentry-raven'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 4.0.0'
   gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'graphiti_spec_helpers'
+  gem 'rspec-rails', '~> 4.0.0'
+end
+
+group :test do
+  gem 'database_cleaner'
 end
 
 group :development do

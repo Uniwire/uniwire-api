@@ -1,0 +1,11 @@
+:user_1:
+  email: john@uniwire.com
+  password: '123456'
+  password_confirmation: '123456'
+  name: John
+
+:user_2:
+  email: michael@uniwire.com
+  password: '654321'
+  password_confirmation: '654321'
+  name: Michael

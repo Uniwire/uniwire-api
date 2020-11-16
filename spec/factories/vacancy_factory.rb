@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :vacancy do
     gender { :both }
-    description { 'Melhor vaga da região.' }
+    description { Faker::Lorem.paragraph }
     monthly_cost { 507.32 }
     availability { :available_soon }
     availability_description { 'Livre à partir de setembro' }

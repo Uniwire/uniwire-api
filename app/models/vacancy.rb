@@ -11,6 +11,9 @@ class Vacancy < ApplicationRecord
 
   belongs_to :student_residence, inverse_of: :vacancies
 
+  validates :monthly_cost, numericality: { greater_than: 0 }
+  validates :availability, :gender, :type, presence: true
+
   mount_uploader :image, UploaderFactory.uploader
 
   enum gender: {
